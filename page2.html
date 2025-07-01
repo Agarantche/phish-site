@@ -188,5 +188,30 @@
       }, 3000);
     }
   </script>
+  <div style="text-align: center; margin-top: 50px;">
+  <button onclick="goToRandomPage()" style="padding: 14px 28px; font-size: 1.1rem; border-radius: 10px; background: #f97316; color: white; border: none; cursor: pointer;">
+    🔀 Go Somewhere Suspicious
+  </button>
+</div>
+
+<script>
+  const pages = [
+    "page1.html",
+    "page2.html",
+    "page3.html",
+    "page4.html",
+    "page5.html",
+    "page6.html",
+    "page7.html",
+    "page8.html"
+  ];
+  const current = window.location.pathname.split("/").pop();
+  const others = pages.filter(p => p !== current); // exclude current page
+  function goToRandomPage() {
+    const randomPage = others[Math.floor(Math.random() * others.length)];
+    window.location.href = randomPage;
+  }
+</script>
+
 </body>
 </html>

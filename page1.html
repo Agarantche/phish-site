@@ -1,140 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>⚠️ SECURITY BREACH ATTEMPT DETECTED ⚠️</title>
-  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Share Tech Mono', monospace;
-      background-color: #E51B24;
-      color: #000000;
-      text-align: center;
-      padding: 40px;
-      font-size: 2.2cap;
-    }
-
-    h1 {
-      font-size: 2.3rem;
-      color: #f6ff00;
-      animation: flicker 1.5s infinite alternate;
-      margin-bottom: 10px;
-    }
-
-    @keyframes flicker {
-      0% { opacity: 1; text-shadow: 0 0 5px #f6ff00, 0 0 20px #f6ff00; }
-      100% { opacity: 0.8; text-shadow: 0 0 3px #f6ff00; }
-    }
-
-    .terminal-box {
-      background-color: #C79A48;
-      border: 2px solid #ff8800;
-      padding: 30px;
-      border-radius: 12px;
-      margin: 30px auto;
-      max-width: 700px;
-      text-align: left;
-    }
-
-    .gif-box {
-      margin: 30px auto;
-    }
-
-    .alert {
-      font-size: 1.3rem;
-      background-color: #FF3366;
-      color: #fff;
-      padding: 10px 20px;
-      border-radius: 5px;
-      display: inline-block;
-      margin-top: 10px;
-      animation: glitch 1s infinite alternate;
-    }
-
-    @keyframes glitch {
-      0% { transform: skewX(0deg); }
-      50% { transform: skewX(4deg); }
-      100% { transform: skewX(-4deg); }
-    }
-
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-
-    li::before {
-      content: "🕵️‍♂️ ";
-    }
-
-    button {
-      margin-top: 25px;
-      font-size: 1rem;
-      padding: 10px 20px;
-      background: #DAA545;
-      color: #000;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-
-    footer {
-      margin-top: 50px;
-      font-size: 0.85rem;
-      color: #ccc;
-    }
-
-    @media (max-width: 600px) {
-      body {
-        padding: 20px;
-      }
-      h1 {
-        font-size: 1.8rem;
-      }
-    }
-  </style>
+    <!--Hellp Teseting-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://emoji.gg/assets/emoji/3172-warning.png" type="image/png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oops! You’ve Been Clicked!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet">
 </head>
-<body>
-  <h1>🛑ACCESS DENIED:THREAT DETECTED🛑</h1>
-  <div class="alert">WARNING: You fell for a phishing attempt.</div>
+<body id="page-one">
+    <h1 class="banner">🎉 YOU GOT PHISHED! 🎉</h1>
+    <div class="gif">
+        <img src="https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif" alt="Game Show Spinner" width="300" />
+    </div>
+    <div class="tip">
+        <h2>🛑 Don't Just Click!</h2>
+        <p>Always hover over links to see where they really go.<br>
+        Just because it says "Otterbein" doesn't mean it's not secretly leading to <code>stealyourdata.biz</code> 👀</p>
+    </div>
+    <div class="prize">
+        🏆 Congratulations! You've just won... 10 spam emails and a lesson in link-checking!
+    </div>
 
-  <div class="gif-box">
-    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnVqbG9vMnl2MjBxczcwdWJuYm1mNDAzenI0b2I4bHAxdGQ4cjJuZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l1J9COnlFRcnkIn8Q/giphy.gif"
-      alt="No No No Reaction GIF" width="300" height="500" />
-  </div>
-
-  <div class="terminal-box">
-    <h2>🔍 SYSTEM LOG TRACE:</h2>
-    <ul>
-      <li>Unknown email domain attempted access...</li>
-      <li>Embedded link redirected to suspicious URL...</li>
-      <li>Message content triggered urgency flag...</li>
-      <li>Grammar and formatting anomaly detected...</li>
-      <li>Impersonation of trusted brand detected...</li>
-    </ul>
-  </div>
-
-  <div class="terminal-box">
-    <h2>💾 PROTOCOL: STAY CYBER-SAFE</h2>
-    <ul>
-      <li>Verify sender domain — don’t trust the name alone.</li>
-      <li>Hover before clicking — links lie.</li>
-      <li>Never download sketchy attachments.</li>
-      <li>If it screams urgency — stop and think.</li>
-      <li>Report anything suspicious. Be a hero. 🦸</li>
-      <li>If you suspect an email might be a phishing attempt, please click the Phish Alert button in your Outlook (see image below) to report it.
+    <div class="extra-tips" style="margin-top: 30px; background: #fef9c3; padding: 20px; border-radius: 12px; max-width: 600px; margin-left: auto; margin-right: auto;">
+        <h2>📌 Quick Tips to Outsmart the Phish:</h2>
+        <ul style="text-align: left; line-height: 1.6;">
+            <li>🕵️‍♀️ <strong>Double-check the sender</strong> — even familiar names can be spoofed.</li>
+            <li>🔗 <strong>Hover over links</strong> — never click blindly!</li>
+            <li>🚨 <strong>Urgency = Red Flag</strong> — phishers love pressure tactics.</li>
+            <li>📎 <strong>Don’t open odd attachments</strong> — especially .zip or .exe files.</li>
+            <li>💬 <strong>Weird grammar or spelling?</strong> That’s a classic phish fail.</li>
+            <li>🕵️‍♀️ <strong>If you suspect an email might be a phishing attempt, please click the Phish Alert button in your Outlook (see image below) to report it.
         <br><img src="Images/PhishAlert.png" alt="Phish Alert Button" style="max-width: 100%; height: auto; margin-top: 10px;">
-        <p>If you're still unsure or need further assistance, don't hesitate to contact the ITS Help Desk for support.</p></li>
-    </ul>
-  </div>
-
-  <button onclick="alert('Anti-phish protocols activated. You’re now cloaked in common sense. 🛡️')">
-    Deploy Anti-Phish Countermeasures
+        <p>If you're still unsure or need further assistance, don't hesitate to contact the ITS Help Desk for support.</strong> </li>
+        </ul>
+    </div>
+    <div style="text-align: center; margin-top: 50px;">
+  <button onclick="goToRandomPage()" style="padding: 14px 28px; font-size: 1.1rem; border-radius: 10px; background: #f97316; color: white; border: none; cursor: pointer;">
+    🔀 Go Somewhere Suspicious
   </button>
+</div>
 
-  <footer>
-    This message will self-destruct in 5... 4... 3... Just kidding. But seriously, don’t click on shady emails.<br />
-    👁️‍🗨️ Project CyberBait • Awareness Level: 💯
-  </footer>
+<script>
+  const pages = [
+    "page1.html",
+    "page2.html",
+    "page3.html",
+    "page4.html",
+    "page5.html",
+    "page6.html",
+    "page7.html",
+    "page8.html"
+  ];
+  const current = window.location.pathname.split("/").pop();
+  const others = pages.filter(p => p !== current); // exclude current page
+  function goToRandomPage() {
+    const randomPage = others[Math.floor(Math.random() * others.length)];
+    window.location.href = randomPage;
+  }
+</script>
+
 </body>
 </html>
